@@ -1,0 +1,9 @@
+  <h1>Post List</h1>
+
+  <%= render "shared/flash" %>
+
+  <%= form_for :post do |f| %>
+    <%= f.title_field :title, placeholder: "Enter your title" %>
+    <%= f.link_field :link, placeholder: "Enter your link"%>
+    <%= f.submit "Submit"%>
+  <% end %>
